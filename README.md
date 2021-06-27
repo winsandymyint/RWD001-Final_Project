@@ -1,8 +1,8 @@
 # RWD1013-Final_Project
-# StudentID - RWD1013
-# Student Name - Chaw Yadana Sint
-# GitHub ID - ChawYadanaSint
-# Branch Name - Chaw_RWD1013
+**StudentID - RWD1013**
+**Student Name - Chaw Yadana Sint**
+**GitHub ID - ChawYadanaSint**
+**Branch Name - Chaw_RWD1013**
 This is final project for the Web Development Foundation Class 001 
 
 ****Run With Live Server****
@@ -51,21 +51,34 @@ Cart is not working for now. XXX
 # Footer
 In footer, Some Links are just filling '#'.
 **Working Links**
+
 **Shop Now(Button)**
+
 **Explore(Button)**
+
 **Home(Under Quick Link)**
+
 **About(Under Quick Link)**
+
 **Shop(Under Quick Link)**
+
 **Profile(Under Quick Link)**
 
 # Other Files
   **MockData JS**
+
   **Navigation JS CSS**
+  
   **Footer CSS**
+  
   **Felt HTML JS**
+  
   **Resin HTML JS**
+  
   **Crochet HTML JS**
+  
   **Clay HTML JS**
+  
   **Embroidery HTML JS**
 
 
