@@ -2,6 +2,7 @@
 # StudentID - RWD1013
 # Student Name - Chaw Yadana Sint
 # GitHub ID - ChawYadanaSint
+# Branch Name - Chaw_RWD1013
 This is final project for the Web Development Foundation Class 001 
 
 ****Run With Live Server****
