@@ -47,6 +47,16 @@ If you click the icon, you can see the typing place.
 # Cart
 Cart is not working for now. XXX
 
+# Footer
+In footer, Some Links are just filling '#'.
+<!-- Working Links -->
+Shop Now(Button)
+Explore(Button)
+Home(Under Quick Link)
+About(Under Quick Link)
+Shop(Under Quick Link)
+Profile(Under Quick Link)
+
 # Other Files
   <!-- MockData JS -->
   <!-- Navigation JS CSS -->
