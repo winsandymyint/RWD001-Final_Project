@@ -4,50 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-  <link rel="stylesheet" href="css/About.css">
+  <title>Crochet</title>
   <link rel="stylesheet" href="css/Navigation.css">
-  <link rel="stylesheet" href="css/Footer.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
+  <link rel="stylesheet" href="css/Footer.css">
+  <link rel="stylesheet" href="css/Home.css">
 </head>
 <body>
+  
   <!-- navigation  -->
   <div id="main" class="navbar">
-      <div class="category_nav">
-        <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
-      </div>
-      <div class="main_nav">
+    <div class="category_nav">
+      <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
+    </div>
+    <div class="main_nav">
       <a href="Home.html">HOME</a>
-      <a class="active" href="About.html">ABOUT</a>
+      <a href="About.html">ABOUT</a>
       <a href="Shop.html">SHOP</a>
-      </div>
-      <div class="profile_nav">
+    </div>
+    <div class="profile_nav">
       <span class="lnr lnr-magnifier" id="search"></span>
       <span class="lnr lnr-cart"></span>
-      <span class="lnr lnr-user" id="profile"></span>
-      </div>
+      <span class="lnr lnr-user" id="profile" style="font-weight: 800;"></span>
+    </div>
   </div>
-  <!-- section  -->
-  <div id="slider_section">
 
-    <section class="slider_section">
-      <div class="container">
-          <div class="row">
-            <div class="full">
-                <h1><strong class="cur">D.I.Y</strong><br>Na Na's Craft Store</h1>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum consequuntur doloremque modi sunt, dolorem ullam fuga repellat aliquam ad tenetur, necessitatibus minima nesciunt iusto laudantium ex quasi possimus provident expedita?LOR</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, architecto pariatur quod maiores perferendis saepe vitae eos dignissimos magni earum fugit provident, veniam aut est et perspiciatis, animi rerum? Culpa!</p>
-            </div>
-            <div>
-                <div class="full text_align_center">
-                    <img class="slide_img" src="./img/Resin/resin_2.png" alt="#" /> 
-                </div>
-            </div>
-          </div>
-      </div>
-    </section>
+  <!-- body  -->
+  <div>
+    <h2 id="title_for_handmade"></h2>
+    <div id='card_holder' class="card_holder"></div>
   </div>
+
+  
+
   <!-- footer  -->
   <footer class="footer">
     <div class="footer__addr">
@@ -146,9 +135,8 @@
         <span>Made with <span class="heart">♥</span> from NaNa's Craft Store</span>
         </div>
     </div>
-  </footer>
-
+</footer>
+  <script type="module" src="js/Crochet.js"></script>
   <script src="js/Navigation.js"></script>
-  <script src="js/Footer.js"></script>
 </body>
 </html>

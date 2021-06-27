@@ -8,43 +8,33 @@
   <link rel="stylesheet" href="css/Navigation.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/Footer.css">
-  <link rel="stylesheet" href="css/Home.css"> 
+  <link rel="stylesheet" href="css/Home.css">
 </head>
 <body>
-  <!-- <div id="Navigation"></div> -->
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Felt Handmade</a>
-    <a href="#">Resin</a>
-    <a href="#">Crochet</a>
-    <a href="#">Clay</a>
-    <a href="#">Embroidery</a>
-  </div>
-  
+  <!-- navigation  -->
   <div id="main" class="navbar">
-    <div class="category_nav">
-      <button class="openbtn" onclick="openNav()">
-        &#9776;
-      </button>
-      <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
-    </div>
-    <div class="main_nav">
-      <a class="active" href="Home.html">HOME</a>
-      <a href="About.html">ABOUT</a>
-      <a href="Shop.html">SHOP</a>
-    </div>
-    <div class="profile_nav">
-      <span class="lnr lnr-magnifier" style="font-size: 22px;" id="search"></span>      
-      <span class="lnr lnr-cart"></span>
-      <span class="lnr lnr-user"></span>
-    </div>
+      <div class="category_nav">
+        <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
+      </div>
+      <div class="main_nav">
+        <a class="active" href="Home.html">HOME</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Shop.html">SHOP</a>
+      </div>
+      <div class="profile_nav">
+        <span class="lnr lnr-magnifier" id="search"></span>
+        <span class="lnr lnr-cart"></span>
+        <span class="lnr lnr-user" id="profile"></span>
+      </div>
   </div>
   <div>
-    <div class="cont s--inactive">
+    <h1>Na Na's Craft Store</h1>
+    <h2 id="title_for_handmade"></h2>
+    <div class="cont s--inactive" id="home_body">
       <!-- cont inner start -->
       <div class="cont__inner">
         <!-- el start -->
-        <div class="el">
+        <div class="el" id='felt'>
           <div class="el__overflow">
             <img src="img/Felt/Felt_KeyChain1.jpg" alt="Felt">
           </div>
@@ -57,7 +47,7 @@
         </div>
         <!-- el end -->
         <!-- el start -->
-        <div class="el">
+        <div class="el" id='resin'>
           <div class="el__overflow">
             <img src="img/Resin/Resin_Earrings3.jpg" alt="Resin">
           </div>
@@ -70,7 +60,7 @@
         </div>
         <!-- el end -->
         <!-- el start -->
-        <div class="el">
+        <div class="el" id="crochet">
           <div class="el__overflow">            
             <img src="img/Crochet/Crochet_Keychain6.jpg" alt="Crochet">
           </div>
@@ -83,7 +73,7 @@
         </div>
         <!-- el end -->
         <!-- el start -->
-        <div class="el">
+        <div class="el" id="clay">
           <div class="el__overflow">
             <img src="img/Clay/Clay_Earrings23.jpg" alt="Clay">
           </div>
@@ -96,7 +86,7 @@
         </div>
         <!-- el end -->
         <!-- el start -->
-        <div class="el">
+        <div class="el" id="embroidery">
           <div class="el__overflow">
             <img src="img/Embroidery/Embroidery_Clip2.jpg" alt="Felt">
           </div>
@@ -112,110 +102,108 @@
       <!-- cont inner end -->
     </div>
   </div>
-  
-  <!-- <footer id="footer" class="footer"></footer> -->
-  
+
+  <!-- footer  -->
   <footer class="footer">
-    <div class="footer__addr">
-      <img src="img/Logo_White.jpg" style="width: 200px;" alt="Logo">
-          
-      <h2>Furst Purchase & get 10% Off</h2>
-      <div style="display: flex; justify-content: left;">
-        <a class="footer__btn" href="#" style="margin-right: 10px;">Go To Cart</a>
-        <a class="footer__btn" href="Home.html">Explore</a>
+      <div class="footer__addr">
+          <img src="img/Logo_White.jpg" style="width: 200px;" alt="Logo">
+          <h2>First Purchase & get 10% Off</h2>
+          <div style="display: flex; justify-content: left;">
+          <a class="footer__btn" href="Shop.html" style="margin-right: 10px;">Shop Now</a>
+          <a class="footer__btn" href="Home.html">Explore</a>
+          </div>
       </div>
-    </div>
-    
-    <ul class="footer__nav">
-      <li class="nav__item">
-        <h2 class="nav__title">My Account</h2>
-  
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Profile</a>
-          </li>
-  
-          <li>
-            <a href="#">Account</a>
-          </li>
-              
-          <li>
-            <a href="#">Purchase</a>
-          </li>
-              
-          <li>
-            <a href="#">Credits</a>
-          </li>
-              
-          <li>
-            <a href="#">Preferences</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="nav__item nav__item--extra">
-        <h2 class="nav__title">Support</h2>
-        
-        <ul class="nav__ul nav__ul--extra">
-          <li>
-            <a href="#">Contact Us</a>
+
+      <ul class="footer__nav">
+          <li class="nav__item">
+          <h2 class="nav__title">My Account</h2>
+
+          <ul class="nav__ul">
+              <li>
+              <a href="#">Profile</a>
+              </li>
+
+              <li>
+              <a href="#">Account</a>
+              </li>
+                  
+              <li>
+              <a href="#">Purchase</a>
+              </li>
+                  
+              <li>
+              <a href="#">Credits</a>
+              </li>
+                  
+              <li>
+              <a href="#">Preferences</a>
+              </li>
+          </ul>
           </li>
           
-          <li>
-            <a href="#">FAQs</a>
-          </li>
+          <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Support</h2>
           
-          <li>
-            <a href="#">Shipping</a>
-          </li>
-          
-          <li>
-            <a href="#">Returns</a>
-          </li>
-          
-          <li>
-            <a href="#">Terms</a>
-          </li>
-          
-          <li>
-            <a href="#">Privacy</a>
-          </li>
-        </ul>
-      </li>
-      
-      <li class="nav__item">
-        <h2 class="nav__title">Quick Links</h2>
-  
-        <ul class="nav__ul">
-          <li>
-            <a href="#">Home</a>
-          </li>
-  
-          <li>
-            <a href="#">About</a>
-          </li>
+          <ul class="nav__ul nav__ul--extra">
+              <li>
+              <a href="#">Contact Us</a>
+              </li>
               
-          <li>
-            <a href="#">Shop</a>
-          </li>
+              <li>
+              <a href="#">FAQs</a>
+              </li>
               
-          <li>
-            <a href="#">Profile</a>
+              <li>
+              <a href="#">Shipping</a>
+              </li>
+              
+              <li>
+              <a href="#">Returns</a>
+              </li>
+              
+              <li>
+              <a href="#">Terms</a>
+              </li>
+              
+              <li>
+              <a href="#">Privacy</a>
+              </li>
+          </ul>
           </li>
-        </ul>
-      </li>
-    </ul>
-    
-    <div class="legal">
-      <p>&copy; 2021 NaNa's Craft Store. All rights reserved.</p>
-      
-      <div class="legal__links">
-        <span>Made with <span class="heart">♥</span> from NaNa's Craft Store</span>
+          
+          <li class="nav__item">
+          <h2 class="nav__title">Quick Links</h2>
+
+          <ul class="nav__ul">
+              <li>
+              <a href="Home.html">Home</a>
+              </li>
+
+              <li>
+              <a href="About.html">About</a>
+              </li>
+                  
+              <li>
+              <a href="Shop.html">Shop</a>
+              </li>
+                  
+              <li>
+              <a href="Profile.html">Profile</a>
+              </li>
+          </ul>
+          </li>
+      </ul>
+
+      <div class="legal">
+          <p>&copy; 2021 NaNa's Craft Store. All rights reserved.</p>
+          
+          <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> from NaNa's Craft Store</span>
+          </div>
       </div>
-    </div>
   </footer>
 
+  <script src="js/Home.js"></script>
   <script src="js/Navigation.js"></script>
-  <script src="js/Footer.js"></script>
 </body>
 </html>

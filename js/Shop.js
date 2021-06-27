@@ -130,7 +130,7 @@ for (var i = 0; i < categories.length; i++) {
           overlay_div3.setAttribute('class','items price');
           var overlay_div3_p = document.createElement('p');
             overlay_div3_p.setAttribute('class','new');
-            overlay_div3_p.textContent = categories[i].price;
+            overlay_div3_p.textContent = `${categories[i].price} Ks`;
         var overlay_div4 = document.createElement('div');
           overlay_div4.setAttribute('class','items price');
           var overlay_div4_span = document.createElement('span');
