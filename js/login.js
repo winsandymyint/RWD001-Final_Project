@@ -1,44 +1,30 @@
-/**
- * 1.1 Validation for user login with pre-defined user info
- * 1.2 If auth success, Login into the admin panel 
- * 1.3 If auth fail, display error message
- * 1.4 Store auth info to the local storage until user logout
- */
+import { user } from './MockData.js';
 
-let email, password; // Declare the variable
-let isEmailSuccessed, isPasswordSuccessed = false;
-let predefinedData = {
-    email: 'loki@gmail.com',
-    password: '12345678',
-}
+var attempt = 3; // Variable to count number of attempts.
 
-function submit() {
-    // When user click the submit button
-    // Validation for user login with pre-defined user info
-    console.log('USER CLICK ME');
-    email = document.getElementById('email').value;
-    password = document.getElementById('password').value;
+// logIn
+var submit = document.getElementById('submit');
+submit.addEventListener('click',function validate(){
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-    if (predefinedData.email == email) {
-        // Check email success 
-        isEmailSuccessed = true;
+  if ( email == user.email && password == user.password){
+    alert ("Login successfully");
+    window.location = "Profile.html"; // Redirecting to Profile page.
+    window.localStorage.setItem('email',JSON.stringify(email));
+    window.localStorage.setItem('password',JSON.stringify(password));
+    return false;
+  }
+  else{
+    attempt --;// Decrementing by one.
+    alert("You have left "+attempt+" attempts!Please log in again!");
+    // Disabling fields after 3 attempts.
+    if( attempt == 0){
+      document.getElementById("email").disabled = true;
+      document.getElementById("password").disabled = true;
+      document.getElementById("submit").disabled = true;
+      return false;
     }
-    
-    if (predefinedData.password == password) {
-        // Check password success
-        isPasswordSuccessed = true; 
-    }
-    
-    if (true/false) {
-        // If auth success, Login into the admin panel 
-        // window.location.replace('/final_project_RWD1234/admin_panel.html');
-    
-        // Store auth info to the local storage until user logout
-        
-        window.localStorage.setItem('email', JSON.stringify(email));
-        window.localStorage.setItem('password', JSON.stringify(password));
-    } else {
-        // 1.3 If auth fail, display error message
-        console.log('Show Error Message to User');
-    }
-}
+  }
+  }
+)

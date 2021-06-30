@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME</title>
+  <title>SHOP</title>
   <link rel="stylesheet" href="css/Navigation.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/Footer.css">
-  <link rel="stylesheet" href="css/Home.css">
+  <link rel="stylesheet" href="css/Shop.css"> 
 </head>
 <body>
   <!-- navigation  -->
@@ -17,9 +17,9 @@
         <img src="img/Logo_Orange.png" style="margin-left: 10px;width: 50px;height: 50px;" alt="">
       </div>
       <div class="main_nav">
-        <a class="active" href="Home.html">HOME</a>
+        <a href="Home.html">HOME</a>
         <a href="About.html">ABOUT</a>
-        <a href="Shop.html">SHOP</a>
+        <a class="active" href="Shop.html">SHOP</a>
       </div>
       <div class="profile_nav">
         <span class="lnr lnr-magnifier" id="search"></span>
@@ -27,84 +27,23 @@
         <span class="lnr lnr-user" id="profile"></span>
       </div>
   </div>
-  <div>
-    <h1>Na Na's Craft Store</h1>
-    <h2 id="title_for_handmade"></h2>
-    <div class="cont s--inactive" id="home_body">
-      <!-- cont inner start -->
-      <div class="cont__inner">
-        <!-- el start -->
-        <div class="el" id='felt'>
-          <div class="el__overflow">
-            <img src="img/Felt/Felt_KeyChain1.jpg" alt="Felt">
-          </div>
-          <div class="el__index">
-            <div class="el__index-back">Felt</div>
-            <div class="el__index-front">
-              <div class="el__index-overlay" data-index="Felt">Felt</div>
-            </div>
-          </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el" id='resin'>
-          <div class="el__overflow">
-            <img src="img/Resin/Resin_Earrings3.jpg" alt="Resin">
-          </div>
-          <div class="el__index">
-            <div class="el__index-back">Resin</div>
-            <div class="el__index-front">
-              <div class="el__index-overlay" data-index="Resin">Resin</div>
-            </div>
-          </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el" id="crochet">
-          <div class="el__overflow">            
-            <img src="img/Crochet/Crochet_Keychain6.jpg" alt="Crochet">
-          </div>
-          <div class="el__index">
-            <div class="el__index-back">Crochet</div>
-            <div class="el__index-front">
-              <div class="el__index-overlay" data-index="Crochet">Crochet</div>
-            </div>
-          </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el" id="clay">
-          <div class="el__overflow">
-            <img src="img/Clay/Clay_Earrings23.jpg" alt="Clay">
-          </div>
-          <div class="el__index">
-            <div class="el__index-back">Clay</div>
-            <div class="el__index-front">
-              <div class="el__index-overlay" data-index="Clay">Clay</div>
-            </div>
-          </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el" id="embroidery">
-          <div class="el__overflow">
-            <img src="img/Embroidery/Embroidery_Clip2.jpg" alt="Felt">
-          </div>
-          <div class="el__index">
-            <div class="el__index-back">Embroidery</div>
-            <div class="el__index-front">
-              <div class="el__index-overlay" data-index="Embroidery">Embroidery</div>
-            </div>
-          </div>
-        </div>
-        <!-- el end -->
-      </div>
-      <!-- cont inner end -->
+  <!-- shop or buy now  -->
+  <div id = "Shop">
+    <h1>Buy Now</h1>
+    <div id="myBtnContainer" class="myBtnContainer">
+      <button class="btn activeFilter" id = 'all'> Show all</button>
+      <button class="btn" id='felt'> Felt</button>
+      <button class="btn" id='resin'> Resin</button>
+      <button class="btn" id='crochet'> Crochet</button>
+      <button class="btn" id='clay'> Clay</button>
+      <button class="btn" id='embroidery'>Embroidery</button>
     </div>
+    <div class="card_holder" id="card_holder"></div>
   </div>
 
-  <!-- footer  -->
-  <footer class="footer">
+
+    <!-- footer  -->
+    <footer class="footer">
       <div class="footer__addr">
           <img src="img/Logo_White.jpg" style="width: 200px;" alt="Logo">
           <h2>First Purchase & get 10% Off</h2>
@@ -202,8 +141,7 @@
           </div>
       </div>
   </footer>
-
-  <script src="js/Home.js"></script>
   <script src="js/Navigation.js"></script>
+  <script type="module" src="js/Shop.js"></script>
 </body>
 </html>
